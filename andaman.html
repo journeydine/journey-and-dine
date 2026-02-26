@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andaman 5N/6D Itinerary — Journey & Dine</title>
+  <meta name="description" content="Complete Andaman Islands 5 Night 6 Day itinerary by Journey & Dine. Port Blair, Havelock, Neil Island. Real costs, inclusions, and travel tips."/>
+
+  <!-- OG Tags for Instagram/WhatsApp link preview -->
+  <meta property="og:title" content="Andaman 5N/6D — Journey & Dine"/>
+  <meta property="og:description" content="Our complete Andaman itinerary: 3 islands, scuba diving, cruises & beaches. Real costs included."/>
+  <meta property="og:type" content="website"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --ocean:  #08202f;
+      --deep:   #041520;
+      --teal:   #0d7377;
+      --aqua:   #14a9ad;
+      --sand:   #f2ddb8;
+      --coral:  #e05c3a;
+      --gold:   #c9963a;
+      --foam:   #dff0f4;
+      --mist:   #8fb3c0;
+      --ink:    #071825;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--deep);
+      color: var(--foam);
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE TEXTURE ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 9998; opacity: .45;
+    }
+
+    /* ══════════════════════════════
+       BRAND HEADER
+    ══════════════════════════════ */
+    .brand-header {
+      background: rgba(4,21,32,.97);
+      border-bottom: 1px solid rgba(201,150,58,.2);
+      padding: .9rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      backdrop-filter: blur(8px);
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+    }
+
+    /* Fork + compass mark */
+    .brand-mark {
+      width: 36px; height: 36px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .brand-mark svg { width: 100%; height: 100%; }
+
+    .brand-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .brand-name-main {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      color: var(--sand);
+    }
+    .brand-name-main span { color: var(--gold); }
+    .brand-name-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: .55rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--mist);
+    }
+
+    .brand-divider {
+      width: 1px; height: 28px;
+      background: rgba(201,150,58,.25);
+      margin: 0 1.2rem;
+    }
+
+    .brand-page-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .62rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--aqua);
+    }
+
+    /* ══════════════════════════════
+       HERO
+    ══════════════════════════════ */
+    .hero {
+      min-height: 95vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 90% 55% at 50% 100%, rgba(13,115,119,.3) 0%, transparent 70%),
+        radial-gradient(ellipse 55% 35% at 15% 15%, rgba(20,169,173,.1) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 30% at 85% 20%, rgba(201,150,58,.07) 0%, transparent 60%),
+        linear-gradient(175deg, #041520 0%, #082030 50%, #0a2e42 100%);
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+    }
+
+    /* animated ring */
+    .hero-ring {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .ring-1 {
+      width: 600px; height: 600px;
+      border: 1px solid rgba(20,169,173,.08);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      animation: slowSpin 60s linear infinite;
+    }
+    .ring-2 {
+      width: 400px; height: 400px;
+      border: 1px solid rgba(201,150,58,.07);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      animation: slowSpin 40s linear infinite reverse;
+    }
+    @keyframes slowSpin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      justify-content: center;
+    }
+    .hero-eyebrow::before,
+    .hero-eyebrow::after {
+      content: '';
+      width: 40px; height: 1px;
+      background: rgba(201,150,58,.4);
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.2rem, 9vw, 6.5rem);
+      line-height: .95;
+      font-weight: 700;
+      color: var(--sand);
+      position: relative;
+      z-index: 2;
+      margin-bottom: .6rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--aqua);
+    }
+    .hero h1 .subtitle-inline {
+      display: block;
+      font-size: .38em;
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--mist);
+      margin-top: .4em;
+    }
+
+    .hero-desc {
+      max-width: 500px;
+      font-size: .95rem;
+      color: var(--mist);
+      line-height: 1.8;
+      font-weight: 300;
+      margin: 1.5rem auto 2.2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-chips {
+      display: flex; gap: .6rem; flex-wrap: wrap;
+      justify-content: center;
+      position: relative; z-index: 2;
+      margin-bottom: 2.5rem;
+    }
+    .chip {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .35rem .9rem;
+      border: 1px solid rgba(20,169,173,.35);
+      border-radius: 100px;
+      color: var(--aqua);
+      background: rgba(20,169,173,.07);
+    }
+    .chip.gold {
+      border-color: rgba(201,150,58,.35);
+      color: var(--gold);
+      background: rgba(201,150,58,.06);
+    }
+
+    .hero-scroll-cta {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(160,190,200,.45);
+      position: relative; z-index: 2;
+      display: flex; flex-direction: column;
+      align-items: center; gap: .5rem;
+      margin-top: 1rem;
+    }
+    .scroll-dot {
+      width: 18px; height: 28px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 9px; position: relative;
+    }
+    .scroll-dot::after {
+      content: '';
+      position: absolute;
+      top: 5px; left: 50%;
+      transform: translateX(-50%);
+      width: 3px; height: 5px;
+      background: var(--mist);
+      border-radius: 2px;
+      animation: dotDrop 1.8s ease infinite;
+    }
+    @keyframes dotDrop {
+      0%   { opacity: 1; top: 5px; }
+      80%  { opacity: 0; top: 14px; }
+      100% { opacity: 0; top: 5px; }
+    }
+
+    /* wave bottom */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 80px;
+      background: var(--deep);
+      clip-path: ellipse(60% 100% at 50% 100%);
+    }
+
+    /* ══════════════════════════════
+       SHARED SECTION UTIL
+    ══════════════════════════════ */
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .6rem;
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      max-width: 60px;
+      height: 1px;
+      background: rgba(201,150,58,.3);
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--sand);
+      line-height: 1.15;
+    }
+    .section-title em { font-style: italic; color: var(--aqua); }
+
+    /* ══════════════════════════════
+       VIDEO SECTION
+    ══════════════════════════════ */
+    #video {
+      background: var(--ocean);
+      padding: 5rem 2rem;
+    }
+    .video-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .video-header {
+      margin-bottom: 2rem;
+    }
+    .video-sub {
+      font-size: .9rem;
+      color: var(--mist);
+      font-weight: 300;
+      margin-top: .5rem;
+      line-height: 1.7;
+    }
+
+    .video-frame-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid rgba(201,150,58,.2);
+      box-shadow: 0 30px 80px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.04);
+    }
+    .video-frame-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* gold corner accents */
+    .video-frame-wrap::before,
+    .video-frame-wrap::after {
+      content: '';
+      position: absolute;
+      width: 20px; height: 20px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .video-frame-wrap::before {
+      top: -1px; left: -1px;
+      border-top: 2px solid var(--gold);
+      border-left: 2px solid var(--gold);
+      border-radius: 6px 0 0 0;
+    }
+    .video-frame-wrap::after {
+      bottom: -1px; right: -1px;
+      border-bottom: 2px solid var(--gold);
+      border-right: 2px solid var(--gold);
+      border-radius: 0 0 6px 0;
+    }
+
+    /* ══════════════════════════════
+       ITINERARY TIMELINE
+    ══════════════════════════════ */
+    #itinerary {
+      padding: 5rem 2rem;
+      background:
+        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(13,115,119,.1) 0%, transparent 70%),
+        var(--deep);
+    }
+    .itinerary-inner {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .itinerary-intro {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .intro-pill {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .38rem .9rem;
+      border: 1px solid rgba(20,169,173,.3);
+      border-radius: 100px;
+      color: var(--aqua);
+    }
+
+    .timeline { position: relative; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 26px; top: 0; bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--teal) 0%, rgba(13,115,119,.2) 85%, transparent 100%);
+    }
+
+    .day-block {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 1.4rem;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .day-block.visible { opacity: 1; transform: translateY(0); }
+
+    .day-num {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), #0a5a5e);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-size: .55rem; letter-spacing: .08em;
+      text-transform: uppercase; color: rgba(255,255,255,.75);
+      line-height: 1.15; flex-shrink: 0;
+      position: relative; z-index: 1;
+      box-shadow: 0 0 0 4px var(--deep), 0 0 0 5px rgba(13,115,119,.3);
+    }
+    .day-num strong {
+      font-size: .95rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .day-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 6px;
+      padding: 1.4rem 1.5rem;
+      transition: border-color .3s, background .3s;
+    }
+    .day-card:hover {
+      border-color: rgba(20,169,173,.3);
+      background: rgba(255,255,255,.04);
+    }
+
+    .day-head {
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 1rem;
+      margin-bottom: .3rem;
+    }
+    .day-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--sand);
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .day-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: .6rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .2rem .6rem;
+      background: rgba(20,169,173,.12);
+      border: 1px solid rgba(20,169,173,.25);
+      border-radius: 100px;
+      color: var(--aqua);
+      white-space: nowrap;
+      margin-top: .15rem;
+    }
+    .day-sub {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .9rem;
+    }
+
+    .activities { list-style: none; display: flex; flex-direction: column; gap: .45rem; }
+    .activities li {
+      font-size: .88rem;
+      color: rgba(210,228,235,.78);
+      padding-left: 1.1rem;
+      position: relative; line-height: 1.6;
+    }
+    .activities li::before {
+      content: '↳';
+      position: absolute; left: 0;
+      color: var(--teal); font-size: .75rem;
+      top: .12em;
+    }
+
+    .day-note {
+      margin-top: 1rem;
+      padding: .65rem 1rem;
+      background: rgba(13,115,119,.12);
+      border-left: 2px solid rgba(13,115,119,.6);
+      font-size: .82rem;
+      color: var(--mist);
+      font-style: italic;
+      border-radius: 0 4px 4px 0;
+      line-height: 1.6;
+    }
+
+    /* ══════════════════════════════
+       HOTELS
+    ══════════════════════════════ */
+    #hotels {
+      background: var(--ocean);
+      padding: 5rem 2rem;
+    }
+    .hotels-inner { max-width: 820px; margin: 0 auto; }
+    .hotels-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+    @media(max-width: 600px) { .hotels-grid { grid-template-columns: 1fr; } }
+
+    .hotel-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 6px;
+      padding: 1.4rem;
+      text-align: center;
+      transition: border-color .25s;
+    }
+    .hotel-card:hover { border-color: rgba(201,150,58,.3); }
+    .hotel-icon { font-size: 1.8rem; margin-bottom: .7rem; }
+    .hotel-place {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--sand);
+      margin-bottom: .25rem;
+    }
+    .hotel-nights {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--aqua);
+      margin-bottom: .5rem;
+    }
+    .hotel-note {
+      font-size: .8rem;
+      color: var(--mist);
+      font-weight: 300;
+    }
+
+    /* ══════════════════════════════
+       INCLUSIONS
+    ══════════════════════════════ */
+    #inclusions {
+      padding: 5rem 2rem;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 100%, rgba(13,115,119,.12) 0%, transparent 70%),
+        var(--deep);
+    }
+    .inclusions-inner { max-width: 820px; margin: 0 auto; }
+    .inc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    .inc-item {
+      display: flex; align-items: flex-start; gap: .8rem;
+      padding: .9rem 1.1rem;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 4px;
+    }
+    .inc-check {
+      width: 20px; height: 20px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), #0a5a5e);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: .1rem;
+    }
+    .inc-check svg { width: 10px; height: 10px; }
+    .inc-text { font-size: .86rem; color: rgba(210,228,235,.8); line-height: 1.5; }
+
+    /* NOT INCLUDED */
+    .exc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: .8rem;
+      margin-top: 1.5rem;
+    }
+    .exc-item {
+      display: flex; align-items: flex-start; gap: .7rem;
+      padding: .8rem 1rem;
+      background: rgba(224,92,58,.05);
+      border: 1px solid rgba(224,92,58,.18);
+      border-radius: 4px;
+      font-size: .83rem;
+      color: rgba(210,228,235,.75);
+      line-height: 1.5;
+    }
+    .exc-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--coral); flex-shrink: 0; margin-top: .45rem;
+    }
+
+    /* ══════════════════════════════
+       COST
+    ══════════════════════════════ */
+    #cost {
+      background: var(--ocean);
+      padding: 5rem 2rem;
+    }
+    .cost-inner { max-width: 820px; margin: 0 auto; }
+    .cost-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media(max-width: 600px) { .cost-grid { grid-template-columns: 1fr; } }
+
+    .cost-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 6px;
+      padding: 1.8rem;
+    }
+    .cost-card.hero-cost {
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 110%, rgba(13,115,119,.2) 0%, transparent 70%),
+        rgba(255,255,255,.04);
+      border-color: rgba(201,150,58,.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .cost-card.hero-cost::before {
+      content: '₹';
+      position: absolute;
+      right: -10px; top: -20px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 9rem;
+      color: rgba(201,150,58,.05);
+      font-weight: 700;
+      pointer-events: none;
+    }
+
+    .cost-lbl {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--mist);
+      margin-bottom: .6rem;
+    }
+    .cost-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem; font-weight: 700;
+      color: var(--sand); line-height: 1;
+      margin-bottom: .3rem;
+    }
+    .cost-num small {
+      font-size: .9rem; font-family: 'Jost', sans-serif;
+      font-weight: 300; color: var(--mist);
+    }
+    .cost-caption { font-size: .8rem; color: var(--mist); font-weight: 300; }
+
+    .cost-rows { margin-top: 1.4rem; display: flex; flex-direction: column; gap: .55rem; }
+    .cost-row {
+      display: flex; justify-content: space-between;
+      font-size: .84rem; color: rgba(210,228,235,.75);
+      padding-bottom: .55rem;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .cost-row:last-child { border-bottom: none; }
+    .cost-row b { color: var(--sand); }
+    .cost-row.total b { color: var(--aqua); font-size: .95rem; }
+
+    /* ══════════════════════════════
+       BRAND FOOTER
+    ══════════════════════════════ */
+    footer {
+      background: #020d18;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(201,150,58,.15);
+    }
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .8rem;
+      margin-bottom: 1rem;
+    }
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--sand);
+      letter-spacing: .04em;
+    }
+    .footer-brand-name span { color: var(--gold); }
+    footer p {
+      font-size: .8rem; color: var(--mist);
+      font-weight: 300; line-height: 1.8;
+    }
+    footer a { color: var(--aqua); text-decoration: none; }
+    .footer-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: .6rem; letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(143,179,192,.4);
+      margin-top: 1.2rem;
+      display: block;
+    }
+
+    /* ══════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════ */
+    @media(max-width: 600px) {
+      .brand-header { padding: .7rem 1rem; }
+      .brand-page-label { display: none; }
+      .brand-divider { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ STICKY BRAND HEADER ═══ -->
+  <header class="brand-header">
+    <a href="index.html" class="brand-lockup">
+      <!-- Fork + wave mark SVG -->
+      <div class="brand-mark">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- fork tines -->
+          <line x1="10" y1="6" x2="10" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="13" y1="6" x2="13" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="16" y1="6" x2="16" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- fork neck -->
+          <path d="M10 14 Q13 17 13 20 L13 30" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- compass circle -->
+          <circle cx="25" cy="18" r="8" stroke="#14a9ad" stroke-width="1.3"/>
+          <!-- compass arrow -->
+          <path d="M25 12 L27 18 L25 16 L23 18 Z" fill="#14a9ad" opacity=".9"/>
+          <path d="M25 24 L23 18 L25 20 L27 18 Z" fill="#14a9ad" opacity=".4"/>
+          <!-- wave under fork -->
+          <path d="M5 33 Q9 30 13 33 Q17 36 21 33" stroke="#14a9ad" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".6"/>
+        </svg>
+      </div>
+      <div class="brand-name">
+        <span class="brand-name-main">Journey <span>&</span> Dine</span>
+        <span class="brand-name-tag">Travel · Food · Stories</span>
+      </div>
+    </a>
+    <div class="brand-divider"></div>
+    <span class="brand-page-label">Andaman Itinerary</span>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-ring ring-1"></div>
+    <div class="hero-ring ring-2"></div>
+
+    <p class="hero-eyebrow">Trip Itinerary · 2024</p>
+
+    <h1>
+      The Andaman<br><em>Islands</em>
+      <span class="subtitle-inline">Port Blair · Havelock · Neil Island</span>
+    </h1>
+
+    <p class="hero-desc">
+      Three islands, one scuba dive, two cruise rides, and some of the most breathtaking sunsets we've ever witnessed. Here's everything you need to plan this trip — costs, tips, and the honest stuff.
+    </p>
+
+    <div class="hero-chips">
+      <span class="chip">🏝 3 Islands</span>
+      <span class="chip">🚢 Cruise Transfers</span>
+      <span class="chip">🤿 Scuba Diving</span>
+      <span class="chip">5 Nights / 6 Days</span>
+      <span class="chip gold">₹26,700 / person</span>
+    </div>
+
+    <div class="hero-scroll-cta">
+      <div class="scroll-dot"></div>
+      <span>watch + explore</span>
+    </div>
+  </section>
+
+  <!-- ═══ VIDEO ═══ -->
+  <section id="video">
+    <div class="video-inner">
+      <div class="video-header">
+        <p class="section-label">Watch Our Trip</p>
+        <h2 class="section-title">See <em>Andaman</em> Through Our Eyes</h2>
+        <p class="video-sub">Before you dive into the itinerary, watch the full trip — the beaches, the dives, the cruises, all of it. This is what 5 nights in the Andamans actually looks like.</p>
+      </div>
+      <div class="video-frame-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/c1gHf212BXQ"
+          title="Andaman Trip — Journey & Dine"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ITINERARY ═══ -->
+  <section id="itinerary">
+    <div class="itinerary-inner">
+      <p class="section-label">Day by Day</p>
+      <h2 class="section-title">The Full <em>Itinerary</em></h2>
+      <div class="itinerary-intro">
+        <span class="intro-pill">Couples ✓</span>
+        <span class="intro-pill">Friends ✓</span>
+        <span class="intro-pill">First-timers ✓</span>
+        <span class="intro-pill">Adventure seekers ✓</span>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Day 1 -->
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>1</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">📍 Arrival in Port Blair</div>
+              <span class="day-badge">Port Blair</span>
+            </div>
+            <div class="day-sub">Relaxed start · Historical evening</div>
+            <ul class="activities">
+              <li>Airport pickup via private AC cab — no local transport stress</li>
+              <li>Visit Corbyn's Cove Beach — first taste of Andaman waters</li>
+              <li>Evening: Cellular Jail Light & Sound Show (entry included)</li>
+              <li>Overnight stay in Port Blair</li>
+            </ul>
+            <div class="day-note">The Light & Sound Show is genuinely moving — don't skip it even if you're tired from the flight. It sets the tone for the whole trip.</div>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>2</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🚢 Cruise to Havelock Island</div>
+              <span class="day-badge">Havelock</span>
+            </div>
+            <div class="day-sub">White sand · Turquoise water · Dreamy sunset</div>
+            <ul class="activities">
+              <li>Premium cruise from Port Blair to Havelock (Swaraj Dweep)</li>
+              <li>Check-in at beachside resort — ask for a sea-facing room</li>
+              <li>Afternoon: Radhanagar Beach (Beach No. 7)</li>
+              <li>Sunset at one of Asia's best-rated beaches</li>
+            </ul>
+            <div class="day-note">Arrive at Radhanagar 45 mins before sunset to find a good spot. The colours here are unlike anything you've seen on a mainland beach.</div>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>3</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🤿 Scuba + Elephant Beach</div>
+              <span class="day-badge">Havelock</span>
+            </div>
+            <div class="day-sub">Best day for adventure lovers</div>
+            <ul class="activities">
+              <li>Morning: Boat ride to Elephant Beach (boat ride included)</li>
+              <li>Boat Scuba Diving — reef starts at shallow depth, perfect for beginners</li>
+              <li>Complimentary snorkeling included alongside the dive</li>
+              <li>Hotel pickup & drop all taken care of</li>
+            </ul>
+            <div class="day-note">Even first-timers can do this — the instructors are incredibly patient. You'll be seeing coral and reef fish within minutes of entering the water. Genuinely magical.</div>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>4</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🚢 Cruise to Neil Island</div>
+              <span class="day-badge">Neil Island</span>
+            </div>
+            <div class="day-sub">Peaceful · Less crowded · Island vibes</div>
+            <ul class="activities">
+              <li>Morning cruise from Havelock to Neil Island (Shaheed Dweep)</li>
+              <li>Visit the Natural Rock Formation — the iconic "Howrah Bridge" arch</li>
+              <li>Laxmanpur Beach at sunset — Neil's most beautiful hour</li>
+              <li>Overnight stay in Neil Island</li>
+            </ul>
+            <div class="day-note">Neil feels calmer and less touristy than Havelock. It's the kind of island where you actually slow down and breathe. Don't rush the evenings here.</div>
+          </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>5</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🌊 Bharatpur Beach + Return</div>
+              <span class="day-badge">Port Blair</span>
+            </div>
+            <div class="day-sub">Coral viewing · Souvenirs · Journey home</div>
+            <ul class="activities">
+              <li>Morning: Bharatpur Beach — shallow water ideal for coral viewing without gear</li>
+              <li>Glass-bottom boat rides and snorkeling available on-site</li>
+              <li>Afternoon: Cruise back to Port Blair</li>
+              <li>Evening: Aberdeen Bazaar for shells, spices & souvenirs</li>
+            </ul>
+            <div class="day-note">Aberdeen Bazaar has the best prices for Andamanese keepsakes. Skip the overpriced hotel gift shops entirely.</div>
+          </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>6</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">✈ Departure Day</div>
+              <span class="day-badge">Fly Home</span>
+            </div>
+            <div class="day-sub">Return with island memories (and a sunburn)</div>
+            <ul class="activities">
+              <li>Relaxed morning checkout from hotel</li>
+              <li>Private AC cab airport drop included in package</li>
+              <li>Fly home — full heart, camera roll bursting</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOTELS ═══ -->
+  <section id="hotels">
+    <div class="hotels-inner">
+      <p class="section-label">Stays</p>
+      <h2 class="section-title">Where We <em>Stayed</em></h2>
+      <div class="hotels-grid">
+        <div class="hotel-card">
+          <div class="hotel-icon">🏙️</div>
+          <div class="hotel-place">Bay Walk</div>
+          <div class="hotel-nights">Port Blair · 2 Nights</div>
+          <div class="hotel-note">Well-located base for Day 1 sightseeing & departure logistics</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-icon">🏖️</div>
+          <div class="hotel-place">Dolphin Beach Resort</div>
+          <div class="hotel-nights">Havelock · 2 Nights</div>
+          <div class="hotel-note">Beachside resort — our favourite stay of the entire trip</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-icon">🌴</div>
+          <div class="hotel-place">Pearl Park Beach Resort</div>
+          <div class="hotel-nights">Neil Island · 1 Night</div>
+          <div class="hotel-note">Peaceful, beach-facing stay — perfectly matches the calm island vibe</div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:1.2rem; font-size:.82rem; color:var(--mist); font-weight:300;">
+        All stays include daily breakfast · No extra charges
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══ INCLUSIONS ═══ -->
+  <section id="inclusions">
+    <div class="inclusions-inner">
+      <p class="section-label">What's Covered</p>
+      <h2 class="section-title">Everything <em>Included</em></h2>
+
+      <div class="inc-grid">
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">Private AC cabs at all islands</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">All ferry transfers — Port Blair ↔ Havelock ↔ Neil</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">Cellular Jail entry + Light & Sound Show</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">Elephant Beach boat ride</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">Scuba diving experience</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">Complimentary snorkeling</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">Airport pickup & drop (both ways)</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">Hotel stays with daily breakfast (5 nights)</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">All permits & entry tickets</span>
+        </div>
+        <div class="inc-item">
+          <div class="inc-check"><svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <span class="inc-text">5% GST included — zero hidden charges</span>
+        </div>
+      </div>
+
+      <p class="section-label" style="margin-top:3rem; margin-bottom:.8rem;">Not Included</p>
+      <div class="exc-grid">
+        <div class="exc-item"><div class="exc-dot"></div>Flights to/from Port Blair</div>
+        <div class="exc-item"><div class="exc-dot"></div>Lunch & dinner</div>
+        <div class="exc-item"><div class="exc-dot"></div>Water activities weather-dependent</div>
+        <div class="exc-item"><div class="exc-dot"></div>Ferry timings subject to change</div>
+        <div class="exc-item"><div class="exc-dot"></div>Personal & shopping expenses</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ COST ═══ -->
+  <section id="cost">
+    <div class="cost-inner">
+      <p class="section-label">Budget Breakdown</p>
+      <h2 class="section-title">The Real <em>Numbers</em></h2>
+
+      <div class="cost-grid">
+        <div class="cost-card hero-cost">
+          <div class="cost-lbl">Total Package (3 Adults)</div>
+          <div class="cost-num">₹80,063<small> all-in</small></div>
+          <div class="cost-caption">All taxes included · No surprises</div>
+          <div class="cost-rows">
+            <div class="cost-row"><span>Package per person</span><b>₹26,700</b></div>
+            <div class="cost-row"><span>Flights (est. from BLR)</span><b>₹10–15k</b></div>
+            <div class="cost-row"><span>Food & extras</span><b>₹5–7k</b></div>
+            <div class="cost-row total"><span>Total estimate / person</span><b>₹42–48k</b></div>
+          </div>
+        </div>
+
+        <div class="cost-card">
+          <div class="cost-lbl">Why This Trip Works</div>
+          <div class="cost-num" style="font-size:1.4rem; margin-bottom:1rem; color:var(--mist);">5N · 3 Islands</div>
+          <div class="cost-rows">
+            <div class="cost-row"><span>Perfect balance</span><b>Relax + Adventure</b></div>
+            <div class="cost-row"><span>Scuba + Snorkeling</span><b>Included</b></div>
+            <div class="cost-row"><span>Transport stress</span><b>Zero</b></div>
+            <div class="cost-row"><span>Best timing</span><b>April (less crowd)</b></div>
+            <div class="cost-row"><span>Early booking</span><b>Recommended</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-brand">
+      <div class="brand-mark" style="width:28px;height:28px;">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="6" x2="10" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="13" y1="6" x2="13" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="16" y1="6" x2="16" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M10 14 Q13 17 13 20 L13 30" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="25" cy="18" r="8" stroke="#14a9ad" stroke-width="1.3"/>
+          <path d="M25 12 L27 18 L25 16 L23 18 Z" fill="#14a9ad" opacity=".9"/>
+          <path d="M25 24 L23 18 L25 20 L27 18 Z" fill="#14a9ad" opacity=".4"/>
+          <path d="M5 33 Q9 30 13 33 Q17 36 21 33" stroke="#14a9ad" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".6"/>
+        </svg>
+      </div>
+      <div class="footer-brand-name">Journey <span>&</span> Dine</div>
+    </div>
+    <p>Real trips · Real costs · No sponsored fluff</p>
+    <p>Watch the full trip on our <a href="https://youtu.be/c1gHf212BXQ" target="_blank">YouTube channel →</a></p>
+    <span class="footer-tag">Hosted on GitHub Pages · Journey & Dine © 2024</span>
+  </footer>
+
+  <!-- ═══ SCROLL ANIMATION ═══ -->
+  <script>
+    const blocks = document.querySelectorAll('.day-block');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 90);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    blocks.forEach(b => io.observe(b));
+  </script>
+
+</body>
+</html>
