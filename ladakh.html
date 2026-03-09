@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ladakh Bike Trip — Srinagar to Delhi | Journey & Dine</title>
+  <meta name="description" content="Complete Ladakh bike trip itinerary: Srinagar → Kargil → Leh → Nubra → Pangong → Manali → Delhi. 10 Nights, 11 Days. Real experience, real costs, gear tips."/>
+  <meta property="og:title" content="Ladakh Bike Trip 10N/11D — Journey & Dine"/>
+  <meta property="og:description" content="Srinagar to Delhi on a Royal Enfield. 2000 KM, 5 passes, Pangong Tso, Nubra Valley. Our full itinerary with costs and gear tips."/>
+  <meta property="og:type" content="website"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --deep:    #0b0e1a;
+      --mountain:#141929;
+      --slate:   #1e2640;
+      --snow:    #e8eef5;
+      --ice:     #7eb8d4;
+      --altitude:#e8703a;
+      --gold:    #c9963a;
+      --mist:    #8a9bbf;
+      --pine:    #2d6a4f;
+      --fog:     #c8d8e8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--deep);
+      color: var(--fog);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 9998; opacity: .5;
+    }
+
+    /* ══ BRAND HEADER ══ */
+    .brand-header {
+      background: rgba(11,14,26,.97);
+      border-bottom: 1px solid rgba(201,150,58,.18);
+      padding: .9rem 2rem;
+      display: flex; align-items: center; justify-content: center;
+      position: sticky; top: 0; z-index: 200;
+      backdrop-filter: blur(8px);
+    }
+    .brand-lockup { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+    .brand-mark { width: 36px; height: 36px; flex-shrink: 0; }
+    .brand-mark svg { width: 100%; height: 100%; }
+    .brand-name { display: flex; flex-direction: column; line-height: 1.1; }
+    .brand-name-main {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem; font-weight: 600;
+      letter-spacing: .04em; color: var(--snow);
+    }
+    .brand-name-main span { color: var(--gold); }
+    .brand-name-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: .55rem; letter-spacing: .22em;
+      text-transform: uppercase; color: var(--mist);
+    }
+    .brand-divider { width: 1px; height: 28px; background: rgba(201,150,58,.22); margin: 0 1.2rem; }
+    .brand-page-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .62rem; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--ice);
+    }
+    @media(max-width:600px){ .brand-divider,.brand-page-label{display:none;} }
+
+    /* ══ HERO ══ */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(ellipse 70% 50% at 20% 80%, rgba(45,106,79,.18) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(126,184,212,.1) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 50% at 50% 100%, rgba(30,38,64,.8) 0%, transparent 70%),
+        linear-gradient(165deg, #060810 0%, #0b0e1a 40%, #141929 70%, #1a1f35 100%);
+      padding: 7rem 2rem 5rem;
+      text-align: center;
+    }
+
+    /* mountain silhouette */
+    .hero-mountains {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 220px;
+      pointer-events: none;
+    }
+
+    .hero-ring {
+      position: absolute; border-radius: 50%; pointer-events: none;
+    }
+    .ring-a {
+      width: 700px; height: 700px;
+      border: 1px solid rgba(126,184,212,.06);
+      top: 50%; left: 50%; transform: translate(-50%,-50%);
+      animation: spin 80s linear infinite;
+    }
+    .ring-b {
+      width: 460px; height: 460px;
+      border: 1px solid rgba(201,150,58,.05);
+      top: 50%; left: 50%; transform: translate(-50%,-50%);
+      animation: spin 50s linear infinite reverse;
+    }
+    @keyframes spin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem; letter-spacing: .22em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 1.4rem;
+      position: relative; z-index: 2;
+      display: flex; align-items: center; gap: .8rem; justify-content: center;
+      animation: fadeUp .8s ease both;
+    }
+    .hero-eyebrow::before, .hero-eyebrow::after {
+      content: ''; width: 36px; height: 1px;
+      background: rgba(201,150,58,.4);
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 9vw, 6.8rem);
+      line-height: .93; font-weight: 700;
+      color: var(--snow);
+      position: relative; z-index: 2;
+      margin-bottom: .6rem;
+      animation: fadeUp .8s .08s ease both;
+    }
+    .hero h1 em { font-style: italic; color: var(--ice); }
+    .hero h1 .route {
+      display: block; font-size: .32em;
+      font-family: 'DM Mono', monospace;
+      font-weight: 400; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--mist);
+      margin-top: .5em;
+    }
+
+    .hero-stats {
+      display: flex; gap: 2rem; justify-content: center;
+      flex-wrap: wrap; margin: 1.8rem 0 2rem;
+      position: relative; z-index: 2;
+      animation: fadeUp .8s .18s ease both;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem; font-weight: 700;
+      color: var(--snow); line-height: 1;
+    }
+    .stat-num span { font-size: 1rem; color: var(--gold); }
+    .stat-lbl {
+      font-family: 'DM Mono', monospace;
+      font-size: .6rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--mist);
+      margin-top: .2rem;
+    }
+    .stat-rule { width: 1px; height: 40px; background: rgba(255,255,255,.1); align-self: center; }
+
+    .hero-desc {
+      max-width: 500px; font-size: .95rem; color: var(--mist);
+      font-weight: 300; line-height: 1.8;
+      margin: 0 auto 2.2rem;
+      position: relative; z-index: 2;
+      animation: fadeUp .8s .26s ease both;
+    }
+
+    .hero-btns {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      justify-content: center;
+      position: relative; z-index: 2;
+      animation: fadeUp .8s .32s ease both;
+    }
+    .btn-primary {
+      display: inline-block; padding: .82rem 2.2rem;
+      background: linear-gradient(135deg, #e8703a, #c95a28);
+      color: #fff; text-decoration: none;
+      font-size: .85rem; font-weight: 600;
+      letter-spacing: .07em; text-transform: uppercase;
+      border-radius: 2px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(232,112,58,.3); }
+    .btn-outline {
+      display: inline-block; padding: .82rem 2.2rem;
+      background: transparent;
+      color: var(--snow); text-decoration: none;
+      font-size: .85rem; font-weight: 500;
+      letter-spacing: .07em; text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 2px;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-outline:hover { border-color: var(--ice); color: var(--ice); }
+
+    .hero-chips {
+      display: flex; gap: .6rem; flex-wrap: wrap;
+      justify-content: center; margin-top: 2.2rem;
+      position: relative; z-index: 2;
+      animation: fadeUp .8s .38s ease both;
+    }
+    .chip {
+      font-family: 'DM Mono', monospace;
+      font-size: .63rem; letter-spacing: .1em;
+      text-transform: uppercase; padding: .3rem .85rem;
+      border: 1px solid rgba(126,184,212,.3); border-radius: 100px;
+      color: var(--ice); background: rgba(126,184,212,.06);
+    }
+    .chip.orange { border-color: rgba(232,112,58,.35); color: var(--altitude); background: rgba(232,112,58,.06); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ══ SHARED ══ */
+    section { padding: 5rem 2rem; }
+    .inner { max-width: 860px; margin: 0 auto; }
+    .inner-wide { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem; letter-spacing: .2em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: .6rem;
+      display: flex; align-items: center; gap: .7rem;
+    }
+    .section-label::after {
+      content: ''; flex: 1; max-width: 50px; height: 1px;
+      background: rgba(201,150,58,.28);
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 4vw, 2.9rem);
+      font-weight: 700; color: var(--snow); line-height: 1.15;
+    }
+    .section-title em { font-style: italic; color: var(--ice); }
+
+    /* ══ HIGHLIGHTS STRIP ══ */
+    #highlights {
+      background: var(--mountain);
+      padding: 3rem 2rem;
+      border-top: 1px solid rgba(255,255,255,.05);
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem; max-width: 1100px; margin: 0 auto;
+    }
+    .highlight-item {
+      display: flex; align-items: flex-start; gap: .85rem;
+    }
+    .hl-icon {
+      font-size: 1.6rem; flex-shrink: 0; margin-top: .1rem;
+    }
+    .hl-text strong {
+      display: block; font-size: .9rem; font-weight: 600;
+      color: var(--snow); margin-bottom: .15rem;
+    }
+    .hl-text span { font-size: .8rem; color: var(--mist); font-weight: 300; line-height: 1.5; }
+
+    /* ══ GEAR RECOMMENDATION ══ */
+    #gear {
+      background:
+        radial-gradient(ellipse 70% 50% at 80% 50%, rgba(232,112,58,.08) 0%, transparent 70%),
+        var(--deep);
+      padding: 4rem 2rem;
+    }
+    .gear-card {
+      max-width: 860px; margin: 2rem auto 0;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(232,112,58,.25);
+      border-radius: 6px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media(max-width:640px){ .gear-card { grid-template-columns: 1fr; } }
+
+    .bike-option {
+      padding: 1.4rem;
+      border-radius: 4px;
+      border: 1px solid rgba(255,255,255,.07);
+      background: rgba(255,255,255,.02);
+    }
+    .bike-option.recommended {
+      border-color: rgba(232,112,58,.45);
+      background: rgba(232,112,58,.06);
+      position: relative;
+    }
+    .rec-badge {
+      position: absolute; top: -12px; right: 12px;
+      font-family: 'DM Mono', monospace;
+      font-size: .62rem; letter-spacing: .12em;
+      text-transform: uppercase; padding: .25rem .75rem;
+      background: var(--altitude); color: #fff;
+      border-radius: 100px;
+    }
+    .bike-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--snow); margin-bottom: .25rem;
+    }
+    .bike-cc {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem; letter-spacing: .12em;
+      color: var(--mist); margin-bottom: 1rem;
+    }
+    .bike-pros { list-style: none; display: flex; flex-direction: column; gap: .45rem; }
+    .bike-pros li {
+      font-size: .86rem; color: rgba(200,216,232,.8);
+      padding-left: 1.1rem; position: relative; line-height: 1.55;
+    }
+    .bike-pros li::before {
+      position: absolute; left: 0; font-size: .7rem;
+    }
+    .bike-option.recommended .bike-pros li::before { content: '✓'; color: var(--altitude); }
+    .bike-option:not(.recommended) .bike-pros li::before { content: '–'; color: var(--mist); }
+
+    .gear-verdict {
+      grid-column: 1 / -1;
+      padding: 1.2rem 1.4rem;
+      background: rgba(232,112,58,.08);
+      border-left: 2px solid var(--altitude);
+      border-radius: 0 4px 4px 0;
+      font-size: .9rem; color: var(--fog); line-height: 1.7;
+    }
+    .gear-verdict strong { color: var(--snow); }
+
+    /* ══ ROUTE MAP ══ */
+    #route {
+      background: var(--mountain);
+      padding: 4rem 2rem;
+    }
+    .route-strip {
+      display: flex; align-items: center;
+      gap: 0; overflow-x: auto;
+      padding: 1.5rem 0; margin-top: 2rem;
+      scrollbar-width: none;
+    }
+    .route-strip::-webkit-scrollbar { display: none; }
+    .route-stop {
+      display: flex; flex-direction: column;
+      align-items: center; flex-shrink: 0;
+    }
+    .stop-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--ice);
+      border: 2px solid rgba(126,184,212,.4);
+      margin-bottom: .5rem;
+    }
+    .stop-dot.highlight { background: var(--altitude); border-color: rgba(232,112,58,.4); width: 14px; height: 14px; }
+    .stop-name {
+      font-family: 'DM Mono', monospace;
+      font-size: .62rem; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--mist);
+      white-space: nowrap; margin-bottom: .2rem;
+    }
+    .stop-alt {
+      font-family: 'DM Mono', monospace;
+      font-size: .56rem; color: rgba(138,155,191,.6);
+    }
+    .route-line {
+      flex: 1; min-width: 30px; height: 1px;
+      background: linear-gradient(to right, rgba(126,184,212,.3), rgba(126,184,212,.15));
+      margin-bottom: 22px; flex-shrink: 0;
+    }
+
+    /* ══ ITINERARY ══ */
+    #itinerary {
+      background:
+        radial-gradient(ellipse 60% 40% at 20% 60%, rgba(45,106,79,.1) 0%, transparent 70%),
+        var(--deep);
+    }
+    .timeline { position: relative; margin-top: 2.5rem; }
+    .timeline::before {
+      content: ''; position: absolute;
+      left: 26px; top: 0; bottom: 0; width: 1px;
+      background: linear-gradient(to bottom, rgba(126,184,212,.5) 0%, rgba(126,184,212,.1) 85%, transparent 100%);
+    }
+
+    .day-block {
+      display: grid; grid-template-columns: 52px 1fr;
+      gap: 1.4rem; margin-bottom: 1.8rem;
+      opacity: 0; transform: translateY(16px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .day-block.visible { opacity: 1; transform: translateY(0); }
+
+    .day-num {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: linear-gradient(135deg, #1a3a5c, #0f2540);
+      border: 1px solid rgba(126,184,212,.25);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-size: .52rem; letter-spacing: .06em;
+      text-transform: uppercase; color: rgba(200,216,232,.65);
+      line-height: 1.15; flex-shrink: 0;
+      position: relative; z-index: 1;
+      box-shadow: 0 0 0 4px var(--deep), 0 0 0 5px rgba(126,184,212,.15);
+    }
+    .day-num strong {
+      font-size: .95rem; font-family: 'Cormorant Garamond', serif;
+      font-weight: 700; color: var(--snow);
+    }
+
+    .day-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 6px; padding: 1.4rem 1.5rem;
+      transition: border-color .3s;
+    }
+    .day-card:hover { border-color: rgba(126,184,212,.25); }
+
+    .day-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: .3rem; }
+    .day-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 700; color: var(--snow);
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .day-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: .58rem; letter-spacing: .1em;
+      text-transform: uppercase; padding: .2rem .6rem;
+      border-radius: 100px; white-space: nowrap; margin-top: .15rem;
+      background: rgba(126,184,212,.1); border: 1px solid rgba(126,184,212,.22); color: var(--ice);
+    }
+    .day-badge.alt-badge {
+      background: rgba(232,112,58,.1); border-color: rgba(232,112,58,.3); color: var(--altitude);
+    }
+    .day-sub {
+      font-family: 'DM Mono', monospace;
+      font-size: .64rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .9rem;
+    }
+    .activities { list-style: none; display: flex; flex-direction: column; gap: .42rem; }
+    .activities li {
+      font-size: .87rem; color: rgba(200,216,232,.78);
+      padding-left: 1.1rem; position: relative; line-height: 1.6;
+    }
+    .activities li::before {
+      content: '↳'; position: absolute; left: 0;
+      color: rgba(126,184,212,.5); font-size: .75rem; top: .1em;
+    }
+    .day-note {
+      margin-top: 1rem; padding: .65rem 1rem;
+      background: rgba(126,184,212,.07);
+      border-left: 2px solid rgba(126,184,212,.4);
+      font-size: .82rem; color: var(--mist);
+      font-style: italic; border-radius: 0 4px 4px 0; line-height: 1.65;
+    }
+
+    /* ══ HOTELS ══ */
+    #hotels { background: var(--mountain); }
+    .hotels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.1rem; margin-top: 2.5rem;
+    }
+    .hotel-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 6px; padding: 1.3rem;
+      transition: border-color .25s;
+    }
+    .hotel-card:hover { border-color: rgba(201,150,58,.3); }
+    .hotel-region {
+      font-family: 'DM Mono', monospace;
+      font-size: .62rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: .35rem;
+    }
+    .hotel-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem; font-weight: 600;
+      color: var(--snow); margin-bottom: .25rem; line-height: 1.3;
+    }
+    .hotel-type {
+      font-size: .78rem; color: var(--mist);
+      font-weight: 300; line-height: 1.5;
+    }
+
+    /* ══ PRICING ══ */
+    #pricing {
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 100%, rgba(126,184,212,.1) 0%, transparent 70%),
+        var(--deep);
+    }
+    .pricing-table {
+      width: 100%; margin-top: 2.5rem;
+      border-collapse: collapse;
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 6px; overflow: hidden;
+    }
+    .pricing-table thead tr {
+      background: rgba(255,255,255,.05);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .pricing-table th {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--mist);
+      padding: .9rem 1.2rem; text-align: left;
+    }
+    .pricing-table td {
+      padding: .9rem 1.2rem; font-size: .88rem;
+      color: rgba(200,216,232,.8);
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .pricing-table tr:last-child td { border-bottom: none; }
+    .pricing-table tr:hover td { background: rgba(255,255,255,.02); }
+    .pricing-table .variant-name { color: var(--snow); font-weight: 500; }
+    .pricing-table .price-final {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 700; color: var(--ice);
+    }
+    .pricing-table .price-strike {
+      text-decoration: line-through; color: var(--mist); font-size: .8rem; margin-right: .4rem;
+    }
+    .pricing-table tr.recommended-row td { background: rgba(232,112,58,.05); }
+    .rec-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .58rem; letter-spacing: .08em;
+      text-transform: uppercase; padding: .18rem .55rem;
+      background: var(--altitude); color: #fff;
+      border-radius: 100px; margin-left: .5rem;
+    }
+    .pricing-note {
+      margin-top: 1rem; font-size: .8rem;
+      color: var(--mist); font-weight: 300;
+    }
+    .pricing-note strong { color: var(--snow); }
+
+    /* ══ INCLUSIONS ══ */
+    #inclusions { background: var(--mountain); }
+    .inc-exc-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 2rem; margin-top: 2.5rem;
+    }
+    @media(max-width:640px){ .inc-exc-grid { grid-template-columns: 1fr; } }
+
+    .inc-block h3 {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem; letter-spacing: .18em;
+      text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .inc-block.included h3 { color: var(--ice); }
+    .inc-block.excluded h3 { color: var(--altitude); }
+
+    .inc-list { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
+    .inc-list li {
+      display: flex; align-items: flex-start; gap: .7rem;
+      font-size: .85rem; color: rgba(200,216,232,.8); line-height: 1.55;
+    }
+    .inc-dot {
+      width: 18px; height: 18px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: .12rem; font-size: .65rem;
+    }
+    .included .inc-dot { background: rgba(126,184,212,.15); border: 1px solid rgba(126,184,212,.3); color: var(--ice); }
+    .excluded .inc-dot { background: rgba(232,112,58,.1); border: 1px solid rgba(232,112,58,.25); color: var(--altitude); }
+
+    /* ══ CTA BOOK ══ */
+    #book {
+      background:
+        radial-gradient(ellipse 100% 60% at 50% 100%, rgba(126,184,212,.15) 0%, transparent 70%),
+        var(--deep);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .book-inner { max-width: 600px; margin: 0 auto; }
+    .book-inner .section-label { justify-content: center; }
+    .book-inner .section-label::after { display: none; }
+    .book-inner .section-title { margin-bottom: 1rem; }
+    .book-sub { font-size: .93rem; color: var(--mist); font-weight: 300; line-height: 1.8; margin-bottom: 2rem; }
+    .book-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .departure-dates {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 6px;
+      text-align: left;
+    }
+    .departure-dates h4 {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem; letter-spacing: .18em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .dates-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: .75rem;
+    }
+    .date-group { }
+    .date-month {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--ice);
+      margin-bottom: .3rem;
+    }
+    .date-list { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .date-pill {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem; padding: .22rem .65rem;
+      background: rgba(126,184,212,.08);
+      border: 1px solid rgba(126,184,212,.2);
+      border-radius: 100px; color: var(--fog);
+    }
+
+    /* ══ FOOTER ══ */
+    footer {
+      background: #04080f; padding: 2.8rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(201,150,58,.15);
+    }
+    .foot-brand { display: inline-flex; align-items: center; gap: .7rem; margin-bottom: .8rem; }
+    .foot-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 600;
+      color: var(--snow); letter-spacing: .04em;
+    }
+    .foot-name span { color: var(--gold); }
+    footer p { font-size: .8rem; color: var(--mist); font-weight: 300; line-height: 1.8; }
+    footer a { color: var(--ice); text-decoration: none; }
+    .foot-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: .58rem; letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(138,155,191,.3);
+      margin-top: 1rem; display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BRAND HEADER -->
+  <header class="brand-header">
+    <a href="../" class="brand-lockup">
+      <div class="brand-mark">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10" y1="6" x2="10" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="13" y1="6" x2="13" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="16" y1="6" x2="16" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M10 14 Q13 17 13 20 L13 30" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="25" cy="18" r="8" stroke="#14a9ad" stroke-width="1.3"/>
+          <path d="M25 12 L27 18 L25 16 L23 18 Z" fill="#14a9ad" opacity=".9"/>
+          <path d="M25 24 L23 18 L25 20 L27 18 Z" fill="#14a9ad" opacity=".4"/>
+          <path d="M5 33 Q9 30 13 33 Q17 36 21 33" stroke="#14a9ad" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".6"/>
+        </svg>
+      </div>
+      <div class="brand-name">
+        <span class="brand-name-main">Journey <span>&</span> Dine</span>
+        <span class="brand-name-tag">Travel · Food · Stories</span>
+      </div>
+    </a>
+    <div class="brand-divider"></div>
+    <span class="brand-page-label">Ladakh Bike Trip</span>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-ring ring-a"></div>
+    <div class="hero-ring ring-b"></div>
+
+    <!-- mountain silhouette SVG -->
+    <svg class="hero-mountains" viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 220 L0 160 L80 110 L160 140 L240 80 L320 120 L400 60 L480 100 L560 40 L640 90 L720 30 L800 80 L880 50 L960 100 L1040 45 L1120 90 L1200 70 L1280 110 L1360 85 L1440 130 L1440 220 Z" fill="rgba(20,25,41,0.9)"/>
+      <path d="M0 220 L0 180 L120 150 L200 165 L300 130 L380 150 L460 110 L540 140 L620 105 L700 130 L800 115 L880 135 L960 118 L1060 140 L1140 125 L1220 145 L1300 130 L1440 155 L1440 220 Z" fill="rgba(11,14,26,0.95)"/>
+      <!-- snow caps -->
+      <path d="M240 80 L220 92 L260 92 Z" fill="rgba(232,238,245,0.15)"/>
+      <path d="M560 40 L540 55 L580 55 Z" fill="rgba(232,238,245,0.18)"/>
+      <path d="M720 30 L698 46 L742 46 Z" fill="rgba(232,238,245,0.2)"/>
+      <path d="M1040 45 L1020 60 L1060 60 Z" fill="rgba(232,238,245,0.15)"/>
+    </svg>
+
+    <p class="hero-eyebrow">Trip Journal · Bike Expedition</p>
+
+    <h1>
+      The <em>Ladakh</em> Ride
+      <span class="route">Srinagar → Kargil → Leh → Nubra → Pangong → Manali → Delhi</span>
+    </h1>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">10<span>N</span></div>
+        <div class="stat-lbl">11 Days</div>
+      </div>
+      <div class="stat-rule"></div>
+      <div class="stat-item">
+        <div class="stat-num">2000<span>km</span></div>
+        <div class="stat-lbl">Total Distance</div>
+      </div>
+      <div class="stat-rule"></div>
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-lbl">High Passes</div>
+      </div>
+      <div class="stat-rule"></div>
+      <div class="stat-item">
+        <div class="stat-num">18,380<span>ft</span></div>
+        <div class="stat-lbl">Max Altitude</div>
+      </div>
+    </div>
+
+    <p class="hero-desc">
+      Two wheels, five mountain passes, one frozen lake, and a valley that looked like the moon. Here's everything you need to know before you ride — from gear to costs to what we'd do differently.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#itinerary" class="btn-primary">See Full Itinerary</a>
+      <a href="#book" class="btn-outline">Book This Trip</a>
+    </div>
+
+    <div class="hero-chips">
+      <span class="chip">🏔 Khardung La</span>
+      <span class="chip">🏔 Chang La</span>
+      <span class="chip">🏔 Tanglang La</span>
+      <span class="chip">🏕 Pangong Tso</span>
+      <span class="chip">🏜 Nubra Valley</span>
+      <span class="chip orange">Royal Enfield Himalayan</span>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section id="highlights">
+    <div class="highlights-grid">
+      <div class="highlight-item">
+        <div class="hl-icon">🏍️</div>
+        <div class="hl-text">
+          <strong>Complimentary Himalayan</strong>
+          <span>Royal Enfield Himalayan + fuel included for the full route</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon">🛡️</div>
+        <div class="hl-text">
+          <strong>Riding Gear Provided</strong>
+          <span>Jacket, helmet, knee pads — though we recommend your own helmet</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon">🗺️</div>
+        <div class="hl-text">
+          <strong>Permits Arranged</strong>
+          <span>All bike & Inner Line Permits taken care of</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon">🔧</div>
+        <div class="hl-text">
+          <strong>Road Captain + Mechanic</strong>
+          <span>Skilled support team + backup vehicle for the full route</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon">🏕️</div>
+        <div class="hl-text">
+          <strong>Swiss Camps + Hotels</strong>
+          <span>Deluxe hotels in towns, Swiss camps with washrooms in the mountains</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="hl-icon">🚌</div>
+        <div class="hl-text">
+          <strong>Volvo Back to Delhi</strong>
+          <span>Luxury semi-sleeper Volvo from Manali back to Delhi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEAR RECOMMENDATION -->
+  <section id="gear">
+    <div class="inner">
+      <p class="section-label">Our Recommendation</p>
+      <h2 class="section-title">Which <em>Bike</em> to Choose</h2>
+
+      <div class="gear-card">
+        <div class="bike-option recommended">
+          <div class="rec-badge">We Rode This ✓</div>
+          <div class="bike-name">Himalayan 411</div>
+          <div class="bike-cc">RE Himalayan · 411cc · Included in package</div>
+          <ul class="bike-pros">
+            <li>Included in the base package at no extra cost</li>
+            <li>Lighter — easier to pick up if it tips over on gravel</li>
+            <li>Handles all of Ladakh's passes and roads without issue</li>
+            <li>Proven machine — thousands of riders have done this exact route on it</li>
+            <li>A first-timer's best starting point for Himalayan riding</li>
+          </ul>
+        </div>
+
+        <div class="bike-option">
+          <div class="bike-name">Himalayan 450</div>
+          <div class="bike-cc">RE Himalayan · 450cc · Add-on · ₹2,000/day</div>
+          <ul class="bike-pros">
+            <li>More power at altitude — noticeably smoother above 15,000 ft</li>
+            <li>Better power delivery on steep, rocky passes</li>
+            <li>More confidence on the Shyok offroad and Wari La sections</li>
+            <li>Worth considering if you've already done the 411 on Ladakh before</li>
+          </ul>
+        </div>
+
+        <div class="gear-verdict">
+          <strong>Our honest take:</strong> We did this entire 2000 km route on the 411 — and it handled everything Ladakh threw at it. Khardung La, Tanglang La, the Shyok offroad to Pangong — the 411 never let us down. Don't let anyone pressure you into upgrading before your first ride. Do it on the 411, experience the route, and if you come back for a second time, step up to the 450.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROUTE STRIP -->
+  <section id="route">
+    <div class="inner-wide">
+      <p class="section-label">The Route</p>
+      <h2 class="section-title">2000 km <em>Across</em> the Himalayas</h2>
+      <div class="route-strip">
+        <div class="route-stop">
+          <div class="stop-dot highlight"></div>
+          <div class="stop-name">Srinagar</div>
+          <div class="stop-alt">5,200 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Zojila Pass</div>
+          <div class="stop-alt">11,575 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Kargil</div>
+          <div class="stop-alt">8,780 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Leh</div>
+          <div class="stop-alt">11,600 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot highlight"></div>
+          <div class="stop-name">Khardung La</div>
+          <div class="stop-alt">18,380 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Nubra Valley</div>
+          <div class="stop-alt">10,000 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Turtuk</div>
+          <div class="stop-alt">9,850 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot highlight"></div>
+          <div class="stop-name">Pangong Tso</div>
+          <div class="stop-alt">14,270 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Chang La</div>
+          <div class="stop-alt">17,590 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Leh</div>
+          <div class="stop-alt">11,600 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot highlight"></div>
+          <div class="stop-name">Tanglang La</div>
+          <div class="stop-alt">17,582 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Sarchu</div>
+          <div class="stop-alt">14,100 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot"></div>
+          <div class="stop-name">Manali</div>
+          <div class="stop-alt">6,700 ft</div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-stop">
+          <div class="stop-dot highlight"></div>
+          <div class="stop-name">Delhi</div>
+          <div class="stop-alt">Overnight Volvo</div>
+        </div>
+      </div>
+      <p style="font-size:.78rem;color:var(--mist);margin-top:.75rem;font-weight:300;">🟠 Orange dots = major altitude/landmark stops</p>
+    </div>
+  </section>
+
+  <!-- ITINERARY -->
+  <section id="itinerary">
+    <div class="inner">
+      <p class="section-label">Day by Day</p>
+      <h2 class="section-title">The Full <em>11-Day</em> Journey</h2>
+
+      <div class="timeline">
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>1</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">✈️ Arrival in Srinagar</div>
+              <span class="day-badge">5,200 ft</span>
+            </div>
+            <div class="day-sub">Acclimatize · Briefing · Rest</div>
+            <ul class="activities">
+              <li>Land at Srinagar Airport, transfer to pre-booked hotel</li>
+              <li>Evening briefing from road captain — route, rules, safety</li>
+              <li>Relax, have a good dinner, sleep early</li>
+            </ul>
+            <div class="day-note">Don't underestimate Day 1. Good sleep tonight sets the tone for everything. Skip the Dal Lake shikara — you have bigger days ahead.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>2</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Srinagar → Kargil</div>
+              <span class="day-badge alt-badge">220 km · 6-7 hrs</span>
+            </div>
+            <div class="day-sub">Zojila Pass · Drass · Tiger Hills · 8,780 ft</div>
+            <ul class="activities">
+              <li>First full day on the bike — engines roar out of Srinagar after breakfast</li>
+              <li>Cross Zojila Pass (11,575 ft) — first high-altitude taste of the trip</li>
+              <li>Pass through Drass, the second coldest inhabited place on Earth</li>
+              <li>Visit Tiger Hills — iconic Kargil War vantage point</li>
+              <li>Reach Kargil by evening, deposit bike keys with captain</li>
+            </ul>
+            <div class="day-note">Zojila can be slippery even in summer. Follow the road captain's pace. Don't rush this pass — it rewards patience, not speed.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>3</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Kargil → Leh</div>
+              <span class="day-badge alt-badge">240 km · 6-7 hrs</span>
+            </div>
+            <div class="day-sub">Dha-Hanu · Magnetic Hill · Gurudwara · 11,600 ft</div>
+            <ul class="activities">
+              <li>Stop at Dha-Hanu village — home to the last Indo-Aryan community in India</li>
+              <li>Confluence of Zanskar and Indus Rivers — unmissable photo stop</li>
+              <li>Visit Magnetic Hill where your bike appears to roll uphill</li>
+              <li>Brief stop at Gurudwara Pather Sahib and Hall of Fame</li>
+              <li>Arrive Leh, check in and rest — acclimatization is critical here</li>
+            </ul>
+            <div class="day-note">Altitude hits differently in Leh. Don't push yourself. Drink water constantly, avoid alcohol tonight, and walk slowly. AMS (altitude sickness) is real at 11,600 ft.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>4</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Leh → Nubra Valley</div>
+              <span class="day-badge alt-badge">160 km · 5-6 hrs</span>
+            </div>
+            <div class="day-sub">Khardung La · Cold Desert · 10,000 ft</div>
+            <ul class="activities">
+              <li>Cross Khardung La — one of the world's highest motorable passes at 18,380 ft</li>
+              <li>The descent into Nubra is one of the most dramatic on the entire route</li>
+              <li>Arrive in Hunder — the cold desert of Nubra Valley</li>
+              <li>Optional camel ride on Bactrian double-humped camels (additional cost)</li>
+              <li>Swiss camp stay overnight in Nubra</li>
+            </ul>
+            <div class="day-note">Khardung La is the emotional peak of the trip. The air is thin and the views are otherworldly. Stop. Breathe it in. Take your time at the top — this is what you came for.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>5</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Nubra → Turtuk → Nubra</div>
+              <span class="day-badge alt-badge">196 km · 8-9 hrs</span>
+            </div>
+            <div class="day-sub">Turtuk Village · Shyok River · LOC · 9,850 ft</div>
+            <ul class="activities">
+              <li>Ride to Turtuk — India's last village before the Line of Control, formerly under Pakistan until 1971</li>
+              <li>The Shyok River Valley along this route is jaw-dropping</li>
+              <li>Explore Turtuk's unique Balti culture — apricot orchards, stone houses, warm people</li>
+              <li>Return to Nubra Valley camp for the night</li>
+            </ul>
+            <div class="day-note">Turtuk is one of the most underrated stops on this entire trip. The people here are extraordinarily warm and the landscape is unlike anything else in India. Don't rush it.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>6</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Nubra → Pangong Tso</div>
+              <span class="day-badge alt-badge">160 km · 7-8 hrs</span>
+            </div>
+            <div class="day-sub">Shyok Route · Blue Lake · 14,270 ft</div>
+            <ul class="activities">
+              <li>Off-road route via Shyok River or Wari La Pass — this is where the real adventure begins</li>
+              <li>Army road, river crossings, loose gravel — the toughest riding of the trip</li>
+              <li>First sight of Pangong Tso — the lake that shifts between five shades of blue in a single hour</li>
+              <li>Overnight in a camp right on the lakeshore</li>
+            </ul>
+            <div class="day-note">Nothing prepares you for Pangong. You'll round a corner and the lake will just be there — impossibly blue at 14,000 ft. It genuinely feels like another planet. Camp here and watch the sunset.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>7</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Pangong → Leh via Chang La</div>
+              <span class="day-badge alt-badge">160 km · 5-6 hrs</span>
+            </div>
+            <div class="day-sub">Chang La · 3 Idiots School · Thiksey · 11,600 ft</div>
+            <ul class="activities">
+              <li>Cross Chang La — third highest motorable pass in the world at 17,590 ft</li>
+              <li>Stop at Druk White Lotus School — the real school from the movie 3 Idiots</li>
+              <li>Visit Thiksey Monastery if time permits — stunning 12-storey gompa overlooking the valley</li>
+              <li>Return to Leh for the night — rest day deserved</li>
+            </ul>
+            <div class="day-note">The 3 Idiots school stop always gets a reaction from the group. It's smaller than the movie makes it look, but still a cool moment on the route.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>8</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Leh → Sarchu</div>
+              <span class="day-badge alt-badge">250 km · 6-7 hrs</span>
+            </div>
+            <div class="day-sub">Nakee La · Lachung La · Tanglang La · 14,100 ft</div>
+            <ul class="activities">
+              <li>Longest day of the trip — cross three high passes back to back</li>
+              <li>Tanglang La at 17,582 ft — your last major Himalayan pass</li>
+              <li>Saying goodbye to Ladakh as the landscape shifts from brown rock to green Himachal</li>
+              <li>Arrive Sarchu — Swiss camp stay at 14,100 ft on the Manali-Leh Highway</li>
+            </ul>
+            <div class="day-note">Three passes in one day is the most physically demanding stretch of the trip. Start early, pace yourself, and don't stop too long at altitude. The descent into Sarchu feels like the world opening up after hours of barren rock.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>9</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏍️ Sarchu → Manali</div>
+              <span class="day-badge alt-badge">200 km · 5-6 hrs</span>
+            </div>
+            <div class="day-sub">Final leg · Kullu Valley · 6,700 ft</div>
+            <ul class="activities">
+              <li>Early start — descend through Rohtang Pass into green Himachal Pradesh</li>
+              <li>The contrast after 8 days of barren Himalayan terrain is surreal — suddenly trees</li>
+              <li>Arrive Manali — deposit bike keys, celebrate the completion of the ride</li>
+              <li>Overnight stay in Manali — well-earned dinner with the group</li>
+            </ul>
+            <div class="day-note">This day has a bittersweet feeling. The ride is done, the bikes go back, and you're surrounded by pine trees again. Most of our group sat in silence for a while. It just hits different.</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>10</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🚌 Manali → Delhi (Volvo)</div>
+              <span class="day-badge alt-badge">540 km · Overnight</span>
+            </div>
+            <div class="day-sub">Checkout · Explore Manali · Evening Departure</div>
+            <ul class="activities">
+              <li>Checkout at 10 AM, explore Manali cafes and market with fellow riders</li>
+              <li>Relive the journey over chai and Manali's famous side streets</li>
+              <li>Evening departure on luxury semi-sleeper Volvo to Delhi</li>
+              <li>Overnight journey — breakfast on the bus</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-num"><span>Day</span><strong>11</strong></div>
+          <div class="day-card">
+            <div class="day-head">
+              <div class="day-title">🏁 Arrival in Delhi</div>
+              <span class="day-badge">Trip Complete</span>
+            </div>
+            <div class="day-sub">2,000 km · 5 passes · 1 frozen lake · Memories for life</div>
+            <ul class="activities">
+              <li>Arrive Delhi early morning</li>
+              <li>Trip ends — online completion certificate issued</li>
+              <li>The Ladakh ride is now something you've actually done</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOTELS -->
+  <section id="hotels">
+    <div class="inner">
+      <p class="section-label">Stays</p>
+      <h2 class="section-title">Where You'll <em>Sleep</em></h2>
+      <div class="hotels-grid">
+        <div class="hotel-card">
+          <div class="hotel-region">Srinagar · Night 1</div>
+          <div class="hotel-name">Hotel Nouvella Residency / The Trident Kashmir</div>
+          <div class="hotel-type">City hotel · Starting base</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-region">Kargil · Night 2</div>
+          <div class="hotel-name">Hotel White Castle / Hotel The Indian Kargil</div>
+          <div class="hotel-type">Town hotel · Post-Zojila rest</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-region">Leh · Nights 3 & 7</div>
+          <div class="hotel-name">Hotel Horpo Chubi / Shashipa / Hotel Lehchen</div>
+          <div class="hotel-type">Deluxe hotel · Acclimatization base</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-region">Nubra Valley · Nights 4 & 5</div>
+          <div class="hotel-name">River Valley Camps / Thomas Camps / Hill Queen Camps</div>
+          <div class="hotel-type">Swiss camp · Attached washrooms</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-region">Pangong Tso · Night 6</div>
+          <div class="hotel-name">Monalisa Cottage / Panorama Cottage</div>
+          <div class="hotel-type">Lakeshore camp · Most scenic stay of the trip</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-region">Sarchu · Night 8</div>
+          <div class="hotel-name">Garjha Hills Camps / Gold Drop Camps</div>
+          <div class="hotel-type">Swiss camp · 14,100 ft altitude stay</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-region">Manali · Night 9</div>
+          <div class="hotel-name">Grand Krisa Resort / Hotel Rock Manali / Hotel Moniker</div>
+          <div class="hotel-type">Hotel · Final night of the ride</div>
+        </div>
+        <div class="hotel-card">
+          <div class="hotel-region">Delhi Journey · Night 10</div>
+          <div class="hotel-name">Luxury Semi-Sleeper Volvo</div>
+          <div class="hotel-type">Overnight bus · Manali to Delhi included</div>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1.2rem;font-size:.8rem;color:var(--mist);font-weight:300;">
+        All stays on triple sharing · Breakfast Day 2–11 · Dinner Day 1–10
+      </p>
+    </div>
+  </section>
+
+  <!-- COST BREAKDOWN -->
+  <section id="pricing" style="background: radial-gradient(ellipse 80% 50% at 50% 100%, rgba(126,184,212,.1) 0%, transparent 70%), var(--deep);">
+    <div class="inner">
+      <p class="section-label">What We Actually Spent</p>
+      <h2 class="section-title">The Real <em>Numbers</em></h2>
+      <p style="font-size:.9rem; color:var(--mist); font-weight:300; line-height:1.8; margin-top:.75rem; margin-bottom:2.5rem;">
+        No estimates, no averages — this is exactly what our trip cost, rupee for rupee.
+      </p>
+
+      <!-- cost rows -->
+      <div style="display:flex; flex-direction:column; gap:.9rem; margin-bottom:2rem;">
+
+        <div style="display:flex; align-items:center; gap:1.2rem; padding:1.1rem 1.4rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:6px;">
+          <div style="font-size:1.5rem; flex-shrink:0;">🏍️</div>
+          <div style="flex:1;">
+            <div style="font-size:.88rem; color:var(--snow); font-weight:500;">Trip Package</div>
+            <div style="font-size:.78rem; color:var(--mist); font-weight:300; margin-top:.15rem;">Bike, stays, meals, permits, road captain — everything in the package</div>
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--snow); flex-shrink:0;">₹32,500</div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1.2rem; padding:1.1rem 1.4rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:6px;">
+          <div style="font-size:1.5rem; flex-shrink:0;">🛶</div>
+          <div style="flex:1;">
+            <div style="font-size:.88rem; color:var(--snow); font-weight:500;">Shikara Ride — Srinagar</div>
+            <div style="font-size:.78rem; color:var(--mist); font-weight:300; margin-top:.15rem;">Dal Lake at sunset — absolutely worth it on Day 1</div>
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--snow); flex-shrink:0;">₹1,500</div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1.2rem; padding:1.1rem 1.4rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:6px;">
+          <div style="font-size:1.5rem; flex-shrink:0;">🍜</div>
+          <div style="flex:1;">
+            <div style="font-size:.88rem; color:var(--snow); font-weight:500;">Food & Drinks</div>
+            <div style="font-size:.78rem; color:var(--mist); font-weight:300; margin-top:.15rem;">Lunches, chai stops, the occasional thukpa at altitude</div>
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--snow); flex-shrink:0;">₹3,000</div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1.2rem; padding:1.1rem 1.4rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:6px;">
+          <div style="font-size:1.5rem; flex-shrink:0;">🎁</div>
+          <div style="flex:1;">
+            <div style="font-size:.88rem; color:var(--snow); font-weight:500;">Gifts & Shopping</div>
+            <div style="font-size:.78rem; color:var(--mist); font-weight:300; margin-top:.15rem;">Pashmina, Ladakhi jewellery, fridge magnets from every pass</div>
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--snow); flex-shrink:0;">₹4,000</div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1.2rem; padding:1.1rem 1.4rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:6px;">
+          <div style="font-size:1.5rem; flex-shrink:0;">🪂</div>
+          <div style="flex:1;">
+            <div style="font-size:.88rem; color:var(--snow); font-weight:500;">Paragliding — Manali</div>
+            <div style="font-size:.78rem; color:var(--mist); font-weight:300; margin-top:.15rem;">Solang Valley — the perfect way to end a 2000 km adventure</div>
+          </div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--snow); flex-shrink:0;">₹3,000</div>
+        </div>
+
+      </div>
+
+      <!-- total -->
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:1.4rem 1.6rem; background:rgba(126,184,212,.06); border:1px solid rgba(126,184,212,.25); border-radius:6px;">
+        <div>
+          <div style="font-family:'DM Mono',monospace; font-size:.65rem; letter-spacing:.16em; text-transform:uppercase; color:var(--mist); margin-bottom:.3rem;">Total Per Person</div>
+          <div style="font-size:.84rem; color:var(--mist); font-weight:300;">Excluding flights to Srinagar</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'Cormorant Garamond',serif; font-size:2.4rem; font-weight:700; color:var(--snow); line-height:1;">₹44,000</div>
+          <div style="font-family:'DM Mono',monospace; font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ice); margin-top:.2rem;">All in · Per person</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONSULTATION CTA -->
+  <section id="consult" style="background: radial-gradient(ellipse 100% 60% at 50% 100%, rgba(126,184,212,.12) 0%, transparent 70%), var(--deep); padding: 6rem 2rem;">
+    <div style="max-width: 580px; margin: 0 auto; text-align: center;">
+
+      <!-- icon -->
+      <div style="width:64px; height:64px; border-radius:50%; background:rgba(255,255,255,.04); border:1px solid rgba(201,150,58,.25); display:flex; align-items:center; justify-content:center; margin:0 auto 1.8rem; box-shadow:0 0 40px rgba(201,150,58,.08);">
+        <svg viewBox="0 0 32 32" fill="none" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="13" stroke="#c9963a" stroke-width="1.3" opacity=".6"/>
+          <path d="M16 9v7l4 4" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M10 26 Q10 22 14 21 Q16 20.5 18 21 Q22 22 22 26" stroke="#7eb8d4" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+          <circle cx="16" cy="17" r="2.5" stroke="#7eb8d4" stroke-width="1.2"/>
+        </svg>
+      </div>
+
+      <p style="font-family:'DM Mono',monospace; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin-bottom:.8rem;">Personal Advice</p>
+
+      <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,5vw,3rem); font-weight:700; color:var(--snow); line-height:1.15; margin-bottom:1rem;">
+        Want more<br><em style="font-style:italic; color:var(--ice);">personalised advice?</em>
+      </h2>
+
+      <p style="font-size:.95rem; color:var(--mist); font-weight:300; line-height:1.85; margin-bottom:2.2rem;">
+        Best month to go, gear to pack, passes to worry about, what we'd do differently — we're happy to walk you through all of it. Book a 30-minute call and we'll give you everything we know.
+      </p>
+
+      <a href="https://cal.com/journeyanddine" target="_blank" rel="noopener"
+        style="display:inline-flex; align-items:center; gap:.75rem; padding:.95rem 2.4rem;
+               background:linear-gradient(135deg, #e8703a, #c95a28);
+               color:#fff; text-decoration:none; font-size:.88rem; font-weight:600;
+               letter-spacing:.07em; text-transform:uppercase; border-radius:2px;
+               transition:transform .2s, box-shadow .2s;
+               box-shadow: 0 8px 30px rgba(232,112,58,.25);"
+        onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 14px 40px rgba(232,112,58,.35)'"
+        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 30px rgba(232,112,58,.25)'">
+        <svg viewBox="0 0 18 18" fill="none" width="16" height="16">
+          <rect x="2" y="3" width="14" height="13" rx="2" stroke="white" stroke-width="1.4"/>
+          <path d="M6 1v4M12 1v4M2 8h14" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        Book a 30-Minute Call
+      </a>
+
+      <p style="margin-top:1.2rem; font-family:'DM Mono',monospace; font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(138,155,191,.45);">Free · No pitch · Just honest advice</p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-brand">
+      <svg viewBox="0 0 36 36" fill="none" width="26" height="26">
+        <line x1="10" y1="6" x2="10" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="13" y1="6" x2="13" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="16" y1="6" x2="16" y2="14" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M10 14 Q13 17 13 20 L13 30" stroke="#c9963a" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="25" cy="18" r="8" stroke="#14a9ad" stroke-width="1.3"/>
+        <path d="M25 12 L27 18 L25 16 L23 18 Z" fill="#14a9ad" opacity=".9"/>
+        <path d="M25 24 L23 18 L25 20 L27 18 Z" fill="#14a9ad" opacity=".4"/>
+        <path d="M5 33 Q9 30 13 33 Q17 36 21 33" stroke="#14a9ad" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".6"/>
+      </svg>
+      <span class="foot-name">Journey <span>&</span> Dine</span>
+    </div>
+    <p>Real trips · Real costs · No sponsored fluff</p>
+    <p style="margin-top:.4rem;">← <a href="../">Back to all journeys</a></p>
+    <span class="foot-meta">Hosted on GitHub Pages · Journey & Dine © 2024</span>
+  </footer>
+
+  <script>
+    const blocks = document.querySelectorAll('.day-block');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    blocks.forEach(b => io.observe(b));
+  </script>
+</body>
+</html>
